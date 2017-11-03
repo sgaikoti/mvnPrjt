@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="applicationsuite" value="testngappsuite"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test(failed)" parallel="tests">
+    <parameter name="applicationTest1" value="testngappTest1"/>
+    <parameter name="applicationTest2" value="testngappTest2"/>
+    <classes>
+      <class name="testNGPkg.TestNGClass">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="beforetest"/>
+          <include name="test1"/>
+          <include name="aftertest"/>
+          <include name="aftermethod"/>
+          <include name="afterclass"/>
+          <include name="beforesuite"/>
+          <include name="beforemethod"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- testNGPkg.TestNGClass -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

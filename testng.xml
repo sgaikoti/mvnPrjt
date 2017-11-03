@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+<!--     <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+    </listeners> -->
+  <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+    <parameter name="applicationsuite" value="testngappsuite"></parameter>
+  <test name="Test">
+      <parameter name="applicationTest1" value="testngappTest1"></parameter>
+      <parameter name="applicationTest2" value="testngappTest2"></parameter>
+      <classes>
+          <class name="testNGPkg.TestNGClass"></class>
+   <!--        <class name="testNGPkg.NewTest"></class> -->
+      </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

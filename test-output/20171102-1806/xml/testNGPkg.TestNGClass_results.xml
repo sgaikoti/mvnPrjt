@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="0.007">
+  <properties />
+            <testcase name="test1" time="0.006" classname="testNGPkg.TestNGClass">
+                <failure type="java.lang.AssertionError"
+                  message="expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:93)
+  org.testng.Assert.failNotEquals(Assert.java:512)
+  org.testng.Assert.assertEqualsImpl(Assert.java:134)
+  org.testng.Assert.assertEquals(Assert.java:115)
+  org.testng.Assert.assertEquals(Assert.java:304)
+  org.testng.Assert.assertEquals(Assert.java:314)
+  testNGPkg.TestNGClass.test1(TestNGClass.java:59)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:744)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="test4" time="0.001" classname="testNGPkg.TestNGClass" />
+                <testcase name="test3" time="0.000" classname="testNGPkg.TestNGClass" />
+      
+</testsuite>
