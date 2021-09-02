@@ -10,7 +10,7 @@
   <name>mavenProject</name>
   <url>http://maven.apache.org</url>
   
-  <description>"Its a Maven Project"</description>
+  <description>"Its a Maven Project with TestNG"</description>
   
     <licenses>
         <license>
